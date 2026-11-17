@@ -39,12 +39,8 @@ public class Lancamento {
     @ManyToOne(fetch = FetchType.LAZY, optional = false)
     @JoinColumn(name = "categoria_id", nullable = false)
     private Categoria categoria;
-    
     // Construtor vazio, getters e setters
-    
-    public Lancamento() {
-    	
-    }
+    public Lancamento() {}
 	public String getDescricao() {
 		return descricao;
 	}
@@ -84,5 +80,6 @@ public class Lancamento {
 	public Long getId() {
 		return id;
 	}
+    
  }
      
